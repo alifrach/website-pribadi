@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Pribadi | Alif Rachman Rosyidin</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #f1f5f9;
+      line-height: 1.7;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: #111c33;
+      padding: 16px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      z-index: 10;
+    }
+
+    .logo {
+      color: #38bdf8;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px 8%;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-size: clamp(30px, 5vw, 48px);
+      margin-bottom: 12px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      max-width: 600px;
+      color: #cbd5e1;
+      margin-bottom: 25px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 24px;
+      border-radius: 8px;
+      background: #0284c7;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 70px 8%;
+      scroll-margin-top: 70px;
+    }
+
+    section h2 {
+      font-size: 28px;
+      color: #38bdf8;
+      margin-bottom: 24px;
+    }
+
+    .card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #cbd5e1;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #164e63;
+      color: #bae6fd;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin: 5px 4px 0 0;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #111c33;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+      }
+
+      nav {
+        justify-content: center;
+      }
+
+      section {
+        padding: 50px 6%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">Profil Saya</div>
+    <nav>
+      <a href="#home">Beranda</a>
+      <a href="#about">Tentang</a>
+      <a href="#education">Pendidikan</a>
+      <a href="#hobbies">Hobi</a>
+      <a href="#projects">Proyek</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <img src="images/profil.jpeg"
+           alt="Foto profil saya">
+
+      <h1>Halo, saya <span>Alif Rachman Rosyidin</span></h1>
+
+      <p>
+        Saya mahasiswa Teknologi Informasi yang tertarik
+        dengan teknologi, dunia digital, dan pengembangan
+        diri. Selamat datang di website pribadi saya xixixi
+      </p>
+
+      <a href="#about" class="button">Kenalan Yuk</a>
+    </section>
+
+    <section id="about">
+      <h2>Tentang Saya</h2>
+      <div class="card">
+        <p>
+          Perkenalkan, nama saya Alif Rachman Rosyidin. Saya adalah
+          CEO sekaligus Founder dari perusahaan ARR GROUP,
+          sebuah holding company yang bergerak di bidang teknologi informasi,
+          transportasi, logistik, kuliner, perhotelan, dan pusat perbelanjaan.
+
+          Dalam struktur bisnisnya, perusahaan ini menaungi berbagai
+          anak perusahaan strategis, seperti
+          PT ARR Digital Solusindo di bidang teknologi informasi, 
+          ARR Trans di layanan bus antar provinsi, 
+          ARR Cargo di sektor logistik, 
+          ARR Resto di industri kuliner, serta
+          PT ARR Hospitality Industry Nusantara yang mengoperasikan
+          bisnis perhotelan dan pusat perbelanjaan.
+
+        </p>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Pendidikan</h2>
+
+      <div class="card">
+        <h3>Universitas</h3>
+        <p>Universitas Bina Sarana Informatika</p>
+        <p>Program Studi: Teknologi Informasi</p>
+        <p>Tahun: 2023 - Sekarang</p>
+      </div>
+
+      <div class="card">
+        <h3>SMA</h3>
+        <p>SMA NEGERI 1 BOBOTSARI</p>
+        <p>Tahun: 2019-2023</p>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobi dan Minat</h2>
+
+      <div class="card">
+        <span class="tag">Gaming</span>
+        <span class="tag">Teknologi</span>
+        <span class="tag">Otomotif</span>
+        <span class="tag">Bersepeda</span>
+        <p style="margin-top: 18px;">
+          Hobi utama saya sebelumnya di bidang otomotif.
+          Saya suka memodifikasi kendaraan,
+          tetapi sekarang saya sudah mulai kehilangan
+          minat itu, untuk alasannya saya tidak paham.
+          Selain itu, saya juga suka bermain game,
+          tetapi lagi dan lagi itu dulu. Sekarang saya
+          juga sudah tidak terlalu banyak menghabiskan 
+          waktu untuk game. Ya mungkin itu saja.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Proyek Saya</h2>
+
+      <div class="card">
+        <h3>Prototype Pendeteksi Ketinggian Air Berbasis IoT</h3>
+        <p>
+          Proyek sistem pendeteksi ketinggian air untuk
+          membantu mitigasi banjir dan tsunami menggunakan
+          ESP32, sensor, LCD, buzzer, dan notifikasi.
+          Saya mengerjakan proyek ini sampai membuat saya stress ringan.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Website Profil Pribadi</h3>
+        <p>
+          Website ini merupakan website suka-suka
+          dikarenakan saya gabut.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Hubungi Saya</h2>
+
+      <div class="card">
+        <p>
+          Kamu bisa menghubungi saya melalui email
+          atau media sosial berikut.
+        </p>
+
+        <p style="margin-top: 15px;">
+          Email: aliffffffff@gmail.com
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Alif Rachman Rosyidin. Dibuat dengan semangat belajar.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
